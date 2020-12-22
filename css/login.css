@@ -1,0 +1,114 @@
+/* Styles for the login page of the website */
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left{
+  background-image: url('../img/login-waifu.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.left:after{
+  content: '';
+  display: block;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  opacity: .8;
+}
+
+
+.login-main{
+  width: 80%;
+  z-index: 1;
+}
+
+
+.logo img {
+  width: 100%;
+}
+
+.page-title{
+  text-transform: uppercase;
+  padding-bottom: 3px;
+  border-bottom: solid black 3px;
+  font-size: 1.5rem;
+}
+
+.login-form{
+  max-width: 100%;
+}
+
+.login-form input{
+  width: 100%;
+  display: block;
+  border: solid black 1px;
+  margin-bottom: 16px;
+  height: 2.4rem;
+  font-size: 1rem;
+  padding-left: .6rem;
+  font-weight: 500;
+  outline: none;
+  transition: .2s;
+}
+
+.login-form input::placeholder{
+  color: black;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.login-form input[type="submit"]{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.login-form input[type="submit"]:hover{
+  background-color: white;
+  color: black;
+}
+
+.login-form input[type="submit"]:focus{
+  background-color: white;
+  color: black;
+}
+
+.login-form input:focus{
+  border: solid black 1px;
+  outline: none;
+  background-color: rgb(0,0,0,.1)
+}
+
+.sign-up{
+  border-bottom: solid black 1px;
+}
+
+.sign-up:hover{
+  color: rgba(0,0,0,.9)
+}
+
+@media screen and (min-width: 1000px){
+  .left{
+    position: static;
+  }
+  .left:after{
+    display: none;
+  }
+  .login-main{
+    height: 100vh;
+    width: 80%;
+    padding: 5rem;
+  }
+}
