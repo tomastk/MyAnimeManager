@@ -31,15 +31,21 @@
         <img src="../img/logo.png" alt="My Anime Manager Logo">
       </div>
       <h1 class="page-title">Registrarme</h1>
-      <form class="login-form">
-        <input type="text" placeholder="Username" class="form__input">
-        <input type="password" placeholder="Contraseña" class="form__input">
-        <input type="password" placeholder="Repetir Contraseña" class="form__input">
-        <input type="submit" value="Registrarme" class="btn-primary">
+      <form class="login-form" id="sign-up-form">
+        <label class="form-label" for="username">Username</label>
+        <input type="text" placeholder="Username" class="form__input" id="username" name="username">
+        <label class="form-label" for="password">Password</label>
+        <input type="password" placeholder="Contraseña" class="form__input" id="password" name="password">
+        <label class="form-label" for="password2">Repetir password</label>
+        <input type="password" placeholder="Repetir Contraseña" class="form__input" id="password2" name="password2">
+        <input type="submit" value="Registrarme">
       </form>
       <a href="login.html" class="sign-up">Ya tengo una cuenta</a>
+      <div class="error" id='error'></div>
+      <div class="ok" id="ok-div"></div>
     </div>
   </main>
-  
+  <script src="../js/añadir-registro.js" type='module'></script>
+  <script src="../js/validar-registro.js" type='module'></script>
 </body>
 </html>

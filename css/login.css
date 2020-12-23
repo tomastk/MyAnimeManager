@@ -53,6 +53,7 @@ body {
   width: 100%;
   display: block;
   border: solid black 1px;
+  margin-top: 5px;
   margin-bottom: 16px;
   height: 2.4rem;
   font-size: 1rem;
@@ -93,13 +94,24 @@ body {
 
 .sign-up{
   border-bottom: solid black 1px;
+  transition: font-size .3s;
 }
 
 .sign-up:hover{
-  color: rgba(0,0,0,.9)
+  font-size: 1.1rem;
+  border-bottom: solid #1990ad 2px;
+  color: #1990ad;
 }
 
-@media screen and (min-width: 1000px){
+.form-label {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 650px){
+  .logo img{
+    width: 60%;
+    text-align: center;
+  }
   .left{
     position: static;
   }
@@ -109,6 +121,18 @@ body {
   .login-main{
     height: 100vh;
     width: 80%;
-    padding: 5rem;
+    padding: 2rem;
   }
+}
+
+.error {
+  margin-top: 16px;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.ok{
+  margin-top: 16px;
+  margin-bottom: 10px;
+  color: green;
 }

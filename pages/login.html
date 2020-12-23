@@ -21,14 +21,18 @@
         <img src="../img/logo.png" alt="My Anime Manager Logo">
       </div>
       <h1 class="page-title">Login</h1>
-      <form class="login-form">
-        <input type="text" placeholder="Username" class="form__input">
-        <input type="password" placeholder="Password" class="form__input">
-        <input type="submit" value="Iniciar Sesión" class="btn-primary">
+      <form class="login-form" id="login-form">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" placeholder="Username" class="form__input" name="username" id="username">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" placeholder="Password" class="form__input" name="password" id="password">
+        <input type="submit" value="Iniciar Sesión">
       </form>
+      <div class="error" id="div-error"></div>
+      <div class="ok" id='div-ok'></div>
       <a href="signup.html" class="sign-up">Registrarme</a>
     </div>
   </main>
-  
+  <script src="../js/validar-usuario.js"></script>
 </body>
 </html>

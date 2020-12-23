@@ -1,0 +1,296 @@
+/* Estilos para la home del sitio web */
+
+.header {
+  padding: 15px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 75% 20%;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+
+.logo{
+  max-width: 100%;
+  width: 200px;
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  cursor: pointer;
+}
+
+.linea {
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  margin-bottom: 3px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.linea:nth-child(3) {
+  margin-bottom: 0px;
+}
+
+.linea.clicked.linea:nth-child(1) {
+  transform: rotate(-135deg);
+  position: relative;
+  bottom: -8px;
+}
+
+.linea.clicked:nth-child(2) {
+  display: none;
+}
+
+.linea.clicked:nth-child(3) {
+  transform: rotate(135deg);
+  bottom: 0;
+}
+
+.menu-items{
+  position: fixed;
+  top: 100px;
+  transition: .3s;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  justify-content: left;
+  width: 90%;
+  background-color: black;
+
+}
+
+.menu-item {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-around;
+  color: white;
+  align-items: center;
+}
+
+.menu-item:nth-last-child(){
+  margin-bottom: 16px;
+}
+
+.username {
+  color: var(--secondary-color)
+}
+.profile-picture{
+  margin-left: 16px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.menu-link{
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  border-bottom: solid white 3px;
+}
+
+.menu-icon:before{
+  font-size: 1.2em;
+  margin-left: 16px;
+}
+
+.menu-items {
+  opacity: 0;
+  display: none;
+}
+
+.menu-items.desplegado{
+  opacity: 100%;
+  display: flex;
+}
+
+@media screen and (min-width: 1000px) {
+
+  body {
+    padding: 1rem;
+  }
+
+  .bar{
+    display: none;
+  }
+  .menu-items{
+    display: flex;
+    background: transparent;
+    opacity: 100%;
+    width: 100%;
+    flex-direction: row;
+    position: static;
+    color: black;
+  }
+
+  .logo {
+    margin: auto;
+    text-align: center;
+  }
+
+  .header {
+    padding: 0px;
+    padding-top: 16px;
+    width: 100%;
+    grid-template-columns: 20% 80%;
+  }
+
+  .menu-item{
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    margin-left: 16px;
+    transition: .3s;
+  }
+
+
+  .menu-item.ancla:hover{
+    border-bottom: solid black 2px;
+  }
+
+  .menu-link {
+    color: black;
+    display: block;
+    width: 100%;
+  }
+
+  .btn-primary {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+}
+
+/* Editando la parte principal del sitio web */ 
+
+.section{
+  width: 90%;
+  height: 80vh;
+  overflow: hidden;
+  margin: auto;
+}
+
+.error-title{
+  font-size: 2rem;
+}
+
+.error-description {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.btn-primary.no-anime{
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.btn-primary.no-anime:hover{
+  background-color: white;
+  border: solid black 1px;
+  color: black;
+}
+
+.btn-primary.no-anime:hover a{
+  color: black;
+}
+
+.btn-primary.no-anime a{
+  color: white;
+}
+
+
+.waifu {
+  height: 500px;
+  background-image: url(../img/extra-waifu.png);
+  background-size: cover;
+}
+
+@media screen and (min-width: 1000px) {
+  .section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    overflow: visible;
+    align-items: center;
+  }
+}
+
+/* Animes Style */ 
+
+.animes {
+  width: 90%;
+  margin: auto;
+  display: grid;
+}
+
+.anime {
+  font-size: 1.3rem;
+  background-color: black;
+  color: white;
+  padding: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.anime-ancla{
+  color: black;
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: 50px;
+  text-align: center;
+  display: block;
+  background-color: white;
+}
+
+.anime-ancla:hover{
+  background-color: black;
+  color: white;
+  border: solid white 1px;
+}
+
+.footer{
+  width: 90%;
+  margin-top: 3rem;
+  margin: auto;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+
+.footer-text{
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.5rem;
+}
+
+.footer-text a {
+  color: var(--secondary-color)
+}
+
+.footer-text a:hover{
+  font-weight: 700;
+}
+
+.footer-text i:before{
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .animes{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}

@@ -2,10 +2,10 @@ PASOS PARA HACER EN EL PROYECTO MY ANIME MANAGER (BETA):
 
 1. Diseñar Páginas e Interfaz Gráfica (Terminado)
 2. Programar las páginas de inicio/registo (Terminado)
-3. Diseñar el Local Storage y todas sus conexiones
-4. Añadir dinamismo a las páginas de inicio/registro mediante el local storage
-5. Programar la página de home, añadir el menú desplegable, los animes, etc.
-6. Añadir dinamismo a la página de home mediante el Local Storage.
+3. Diseñar el Local Storage y todas sus conexiones (Terminado)
+4. Añadir dinamismo a las páginas de inicio/registro mediante el local storage (Terminado)
+5. Programar la página de home, añadir el menú desplegable, los animes, etc. (Terminado)
+6. Añadir dinamismo a la página de home mediante el Local Storage. (Terminado)
 7. Diseñar la página de Mi Perfil, hacerlo responsive, diseñar los formularios, añadir imágenes, etc.
 8. Añadir dinamismo a la página de Mi Perfil mediante local storage, actualizar datos, etc.
 9. Diseñar la página de Añadir Anime, hacerlo responsive, diseñar los formularios, añadir imagenes, etc.
