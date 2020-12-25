@@ -6,24 +6,28 @@ PASOS PARA HACER EN EL PROYECTO MY ANIME MANAGER (BETA):
 4. Añadir dinamismo a las páginas de inicio/registro mediante el local storage (Terminado)
 5. Programar la página de home, añadir el menú desplegable, los animes, etc. (Terminado)
 6. Añadir dinamismo a la página de home mediante el Local Storage. (Terminado)
-7. Diseñar la página de Mi Perfil, hacerlo responsive, diseñar los formularios, añadir imágenes, etc.
-8. Añadir dinamismo a la página de Mi Perfil mediante local storage, actualizar datos, etc.
-9. Diseñar la página de Añadir Anime, hacerlo responsive, diseñar los formularios, añadir imagenes, etc.
-10. Añadir dinamismo a la página de Añadir Animes mediante el Local Storage, añadiendolos.
+7. Diseñar la página de Mi Perfil, hacerlo responsive, diseñar los formularios, añadir imágenes, etc. (Term
+inado)
+8. Añadir dinamismo a la página de Mi Perfil mediante local storage, actualizar datos, etc. (Terminado)
+9. Diseñar la página de Añadir Anime, hacerlo responsive, diseñar los formularios, añadir imagenes, etc. (
+Terminado)
+10. Añadir dinamismo a la página de Añadir Animes mediante el Local Storage, añadiendolos. (Terminado)
+10,2. Encriptar y desencriptar contraseñas mediante javascript (Pospuesto)
 11. Programar la home para mostrar los animes añadidos en el Local Storage, en caso de que no haya ninguno, 
-programar la página de Error (mostrando su respectivos textos, botones e imagenes)
+programar la página de Error (mostrando su respectivos textos, botones e imagenes) (Terminado)
 12. Diseñar la página de cada anime, añadiendo la descripción de ellos, los episodios que se vieron y la 
-interfaz mediante checkboxes.
+interfaz mediante checkboxes. (Pospuesto)
 13. Programar la página de cada anime obteniendo los datos mediante el Local Storage, para poder actualizar
-correctamente cada uno.
+correctamente cada uno. (Pospuesto)
 14. Programar los checkboxs de cada episodio visto y conectar la lógica con el texto, haciendo que las páginas
-de los animes sean dinámicas.
-15. Diseñar los botones modales de Editar Anime y Borrar Anime.
+de los animes sean dinámicas. (Pospuesto)
+15. Diseñar los botones modales de Editar Anime y Borrar Anime. (Pospuesto)
 16. Programar los botones modales de Editar Anime y Borrar anime, conectandolos con el Local Storage
-para poder hacer una actualización de los datos.
-17. Diseñar las páginas de Animes que he visto y Animes por Ver.
-18. Añadir dinamismo a las páginas de Animes que he visto y Animes por Ver mediante el Local Storage.
+para poder hacer una actualización de los datos. (Pospuesto)
+17. Diseñar las páginas de Animes que he visto y Animes por Ver. (Terminado)
+18. Añadir dinamismo a las páginas de Animes que he visto y Animes por Ver mediante el Local Storage. (Termi-
+nado)
 19. Programar el botón de Cerrar Sesión y hacer su conexion con el resto de las páginas, manejando
-sesiones y manejando multiples usuarios.
+sesiones y manejando multiples usuarios. (Terminado)
 20. Hacer un testing de todo el proyecto para buscar posibles fallos.
 21. Desplegar el proyecto a Github Pages y comenzar con la fase de testeos.

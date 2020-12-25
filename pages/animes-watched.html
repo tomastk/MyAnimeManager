@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Añadir Anime</title>
+  <link rel="shortcut icon" href="img/isotipo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../img/isotipo.png" type="image/x-icon">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <!--Normalize.css-->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <!--My Own Resetter-->
+  <link rel="stylesheet" href="../css/resetter.css">
+  <!--Page Own Styles-->
+  <link rel="stylesheet" href="../css/home.css">
+  <!--Estilos del formulario-->
+  <link rel="stylesheet" href="../css/formulario.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <a href="/">
+        <img src="../img/logo.png" alt="">
+      </a>
+    </div>
+    <div class="menu">
+      <div class="bar" id="menu-bar">
+        <div class="linea"></div>
+        <div class="linea"></div>
+        <div class="linea"></div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <h3 class="username" id="username"></h3>
+          <img src="../img/profile-picture.png" alt="Profile Picture" class="profile-picture ">
+        </div>
+        <div class="menu-item ancla">
+          <a href="editar-perfil.html" class="menu-link">Editar perfil</a>
+          <i class="fas fa-user-circle menu-icon"></i>
+        </div>
+        <div class="menu-item ancla">
+          <a href="animes-watched.html" class="menu-link">Animes que he visto</a>
+          <i class="fas fa-check-circle menu-icon"></i>
+        </div>
+        <div class="menu-item ancla">
+          <a href="animes-unwatched.html" class="menu-link">Animes por ver</a>
+          <i class="fas fa-user-clock menu-icon"></i>
+        </div>
+        <div class="menu-item ancla">
+          <a href="#" class="menu-link" onclick="cerrarSesion()">Cerrar Sesión</a>
+          <i class="fas fa-sign-out-alt menu-icon"></i>
+        </div>
+
+        <div class="menu-item">
+          <a href="add-anime.html" class="btn-primary">Añadir Anime</a>
+        </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id='error-no-anime'>
+      <div>
+        <h2 class="error-title">Acá no hay nada...</h2>
+        <p class="error-description">Todavía no viste ningún anime, cuando termines alguno, va a aparecer acá</p>
+        <button class="btn-primary no-anime"><a href="/">Mis Animes</a></button>
+      </div>
+      <div class="waifu"></div>
+    </section>
+  </main>
+
+  <div class="animes" id='animes-div'>
+  </div>
+
+  <script>
+    document.getElementById('username').innerText = localStorage.getItem('actualSession')
+  </script>
+
+  <script src="../js/add-animes-watched.js"></script>
+  <script src="../js/header.js"></script>
+  <script src="../js/validar-sesion.js"></script>
+  <script src="../js/menu-desplegable.js"></script>
+</body>
+</html>

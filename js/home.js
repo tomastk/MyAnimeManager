@@ -1,27 +1,23 @@
 /* Código encargado de cambiar todos los textos en la home, mostrar la página de error, cambiar el username y mostrar los animes y sus respectivos enlaces */ 
-const usernameDiv = document.getElementById('username')
-const username = localStorage.getItem('actualSession');
 const allUsers = JSON.parse(localStorage.getItem('users'));
 const errorNoAnimeDiv = document.getElementById('error-no-anime')
-usernameDiv.innerText = username;
+const localStorageUsername = localStorage.getItem('actualSession');
+const animeDIV = document.getElementById('animes-dom')
+const localStorageUsers = JSON.parse(localStorage.getItem('users'));
 
-/* Botón de cerrar sesion */
-
-function cerrarSesion() {
-  localStorage.removeItem('actualSession');
-  location.reload();
-}
-/* Mostar animes... o no? */ 
 let userIndex;
 
-allUsers.forEach( (user, index) => {
-  if(user.usuario === username){
+localStorageUsers.forEach( (user, index) => {
+  if(user.usuario === localStorageUsername){
     userIndex = index;
   }
 })
 
+const usuarioActivo = localStorageUsers[userIndex];
 
-const usuarioActivo = allUsers[userIndex];
+/* Mostar animes... o no? */ 
+
+
 if (!usuarioActivo.animeData){
   errorNoAnimeDiv.style.display = 'grid';
 } else {
@@ -29,5 +25,15 @@ if (!usuarioActivo.animeData){
 }
 
 function mostrarAnimes() {
-  
+  const animes = usuarioActivo.animeData;
+  animes.forEach(anime => {
+    const animeDOM = document.createElement('div');
+    animeDOM.classList.add('anime');
+    
+    animeDOM.innerHTML = `
+    <h3>${anime.animeName}</h3>
+    <a href="#" class="anime-ancla">Administrar</a>
+    `
+    animeDIV.appendChild(animeDOM)
+  })
 }

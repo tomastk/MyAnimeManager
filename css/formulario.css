@@ -1,0 +1,53 @@
+/* Estilos para el formulario en css */ 
+
+.principal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.form {
+  padding: 1.5rem;
+  height: 75vh;
+}
+
+.form-label, .form-input{
+  display: block;
+  margin-bottom: 16px;
+}
+
+.form-input {
+  padding: .5rem;
+  outline: none;
+  border: solid black 1px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.form-submit{
+  background-color: black;
+  color: white;
+  outline: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: .6rem;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.waifu-form{
+  background-image: url(../img/form-waifu.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .principal {
+    grid-template-columns: 1fr;
+  }
+  .waifu-form {
+    display: none;
+  }
+}

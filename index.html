@@ -32,47 +32,47 @@
           <img src="img/profile-picture.png" alt="Profile Picture" class="profile-picture ">
         </div>
         <div class="menu-item ancla">
-          <a href="#" class="menu-link">Editar perfil</a>
+          <a href="pages/editar-perfil.html" class="menu-link">Editar perfil</a>
           <i class="fas fa-user-circle menu-icon"></i>
         </div>
         <div class="menu-item ancla">
-          <a href="#" class="menu-link">Animes que he visto</a>
+          <a href="pages/animes-watched.html" class="menu-link">Animes que he visto</a>
           <i class="fas fa-check-circle menu-icon"></i>
         </div>
         <div class="menu-item ancla">
-          <a href="#" class="menu-link">Animes por ver</a>
+          <a href="pages/animes-unwatched.html" class="menu-link">Animes por ver</a>
           <i class="fas fa-user-clock menu-icon"></i>
         </div>
         <div class="menu-item ancla">
-          <a href="#" class="menu-link" onclick="cerrarSesion()">Cerrar Sesión</a>
+          <a href="#" class="menu-link" onclick="cerrarSesion()" title='Cerrar Sesión'>Cerrar Sesión</a>
           <i class="fas fa-sign-out-alt menu-icon"></i>
         </div>
 
         <div class="menu-item">
-          <a href="#" class="btn-primary">Añadir Anime</a>
+          <a href="pages/add-anime.html" class="btn-primary">Añadir Anime</a>
         </div>
 
     </div>
   </header>
 
   <section class="section" style="display: none" id='error-no-anime'>
-    <div class="error">
+    <div>
       <h2 class="error-title">Acá no hay nada todavía...</h2>
       <p class="error-description">Todavía no estás administrando ningún anime, prueba a añadir alguno.</p>
-      <button class="btn-primary no-anime"><a href="#">Añadir Anime</a></button>
+      <button class="btn-primary no-anime"><a href="pages/add-anime.html">Añadir Anime</a></button>
     </div>
     <div class="waifu"></div>
   </section>
 
-  <div class="animes">
-   
-  </div>
+  <div class="animes" id='animes-dom'></div>
 
 
 
   <script src="js/validar-sesion.js"></script>
   <script src="js/menu-desplegable.js"></script>
   <script src="js/home.js"></script>
+  <script src="js/header.js"></script>
+
 
 </body>
 </html>
