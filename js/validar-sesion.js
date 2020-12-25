@@ -5,8 +5,8 @@ const path = location.pathname;
 
 if (!actualSession) {
   if (path.includes('pages')) {
-    location = '/pages/login.html'
+    location = '../pages/login.html'
   } else {
-    location = 'pages/login.html'
+    location = '../pages/login.html'
   }
 }
