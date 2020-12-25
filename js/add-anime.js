@@ -105,7 +105,7 @@ formulario.addEventListener('submit', (e) => {
     errorDiv.innerText = ''
     okDiv.innerHTML = `
       Anime añadido correctamente.
-      <a href="/" class="link">Verlo</a>
+      <a href="/MyAnimeManager/index.html" class="link">Verlo</a>
       `
     añadirAnimeLocalStorage(animeNameDiv.value, episodes.value, date.value, dailyEpisodes.value);
     }
